@@ -20,12 +20,12 @@ Lets learn some basic html. The template we will be creating contains only basic
 4. **Create a index.html file and try to create a similar template as in the link**
     https://nurexcoder.github.io/template/
     
-5. **Once your done with the template, commit the changes and push it to github***
+5. **Once your done with the template, commit the changes and push it to github**
    ```bash
    git status
    git add .
    git commit -m "Your message"
    git push -u origin name-of-your-choice
    ```
- 6. **Then raise a pull request.**
+ 6. **Then raise a pull request**
 
