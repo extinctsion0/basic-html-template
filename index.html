@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Template | club survey form</title>
+</head>
+
+<!-- STYLING STARTS FROM HERE-- WITH CSS -->
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+
+body{
+    background-color: #18181717;
+}
+.form-making {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 3% 23%;
+}
+#heading {
+  font-family: "Baloo 2", "cursive";
+  font-size: 3rem;
+  height: 65px;
+  text-align: center;
+  color: #216060;
+}
+.form-making label{
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.form-making textarea{
+    width: 764px;
+    height: 133px;
+    font-size: 20px;
+}
+
+.form-making select{
+    width: 82%;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px 8px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 21px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  background-color: #05050214;
+}
+
+table th {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+table td {
+  font-size: 22px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 10px 0px;
+    padding: 10px 10px;
+
+}
+
+</style>
+
+<!-- STYLING ABOVE THIS-->
+
+<body>
+
+    <h2 id="heading">Club Interests Survey form</h2>
+
+    <!-- FORM MAKING IN HTML -->
+    <div class="form-making">
+        <form action="">
+            <label class="label-class" for="fname">Enter Your Name:</label>
+            <br>
+            <input type="text" id="fname">
+            <br>
+            <label class="label-class" for="fdepartment">Enter Your Department:</label>
+            <br>
+            <input type="text" id="fdepartment">
+            <br>
+            <label class="label-class" for="aboutYourself">Tell Us About Yourself:</label>
+            <br>
+            <textarea name="fabout" id="aboutYourself" cols="30" rows="10">Enter here ...</textarea>
+            <br>
+            <label class="label-class" for="exp">Do You Have Experience In Web Development ?</label>
+            <br>
+            <input type="radio" value="yes">
+            <label class="label-class" for="exp">Yes</label>
+            <br>
+            <input type="radio" name="web_exp" id="exp">
+            <label class="label-class" for="exp">No</label>
+            <br>
+            <label class="label-class" for="fav_topic">How Do You Like To Read About Your Favorite Topics ?</label>
+            <br>
+            <input type="checkbox" name="fav_topic" id="book">
+            <label class="label-class">Books</label>
+            <br>
+            <input type="checkbox" name="fav_topic" id="o_articlel">
+            <label class="label-class" for="">Online Article</label>
+            <br>
+            <input type="checkbox" name="fav_topic" id="v_tut">
+            <label class="label-class" for="">Video Tutorial</label>
+            <br>
+            <label class="label-class" for="tech_dom">In which tech domain you are interseted in ?</label>
+            <br>
+            <select name="tech_dom" id="tech">
+                <option value="web_dev">Web Development</option>
+                <option value="and_dev" selected="true">Android Development</option>
+                <option value="aiml">AL/ML</option>
+                <option value="block">Blockchain</option>
+                <option value="Dev Ops">Dev Ops</option>
+                <option value="comp-coding">Competitive Coding</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <!-- MAKING TABLE IN HTML -->
+
+    <table>
+        <tr>
+            <th>Tech Domain</th>
+            <th>Basic Skills Required</th>
+            <th>Links to Learn</th>
+        </tr>
+        <tr>
+            <td>Web development</td>
+            <td>HTML,CSS,Javascript,php,node.js,etc</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+        <tr>
+            <td>App development</td>
+            <td>XML,java,kortlin,C#,etc</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+        <tr>
+            <td>AI/ML</td>
+            <td>python Applied Mathematics,Neural Networks,etc</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+        <tr>
+            <td>Block chain</td>
+            <td>Data Structure,Cryptography,Interoperability skills,etc</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+        <tr>
+            <td>Dev ops</td>
+            <td>Linux Fundamentals,etc.</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+        <tr>
+            <td>Competitive programming</td>
+            <td>c++(stl),python,etc</td>
+            <td><a href="url">Link</a></td>
+        </tr>
+    </table>
+
+    <footer>MADE BY : VISHAL VAIBHAV</footer>
+    
+</body>
+
+</html>
